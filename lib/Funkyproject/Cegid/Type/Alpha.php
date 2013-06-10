@@ -2,18 +2,14 @@
 
 namespace Funkyproject\Cegid\Type;
 
-class Alpha
+use \Funkyproject\Cegid\Type as BaseType;
+
+class Alpha extends BaseType
 {
-	private $length = 0;
-	private $direction = 
-	public function __construct($length);
-	{
-		$this->length = $lenght;
-	}
-	
-	
-	public function test() 
-	{
-		return preg_match('^[:ALPHA:]+$', $this->value)
-	 }
+    protected function assert()
+    {
+        return function($value) {
+            return ctype_alnum($value);
+        };
+    }
 }
