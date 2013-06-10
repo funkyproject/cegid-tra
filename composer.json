@@ -1,0 +1,20 @@
+{
+    "name": "funkyproject/cegid",
+    "type": "library",
+    "description": "Generate TRA export file",
+    "keywords": ["php", "cegid", "tra"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aurélien Fontaine",
+            "email": "afontaine@attraktiv.fr"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2"
+    },
+    "autoload": {
+        "psr-0": { "Funkyproject\\Cegid": "lib/" }
+    },
+    "minimum-stability": "dev"
+}
